@@ -1,0 +1,15 @@
+{
+    "name": "MP Font Changer",
+    "description": "Change default font on MountainProject",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts" :  [
+        {
+            "matches" : ["https://www.mountainproject.com/*"],
+            "js" : ["change-font.js"]
+        }
+    ]
+}
